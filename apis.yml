@@ -1,25 +1,68 @@
 aid: new-wave-foods
+
 name: New Wave Foods
-description: 'New Wave Foods is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'New Wave Foods is a food technology company that creates plant‑based seafood alternatives using proprietary processes. Founded in 2020, the company aims to reduce the environmental impact of traditional fishing and provide sustainable, nutritious options for consumers. Backed by notable investors, New Wave Foods has launched products in major retail chains and continues to expand its portfolio of ocean‑inspired plant foods.'
+
 url: https://raw.githubusercontent.com/api-evangelist/new-wave-foods/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- FoodTech
+- PlantBased
+- SeafoodAlternative
+- Sustainability
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/new-wave-foods-hosts.yml
+- type: Vendors
+  url: vendors/new-wave-foods-vendors.yml
+- type: DomainSecurity
+  url: security/new-wave-foods-domain-security.yml
 - type: Website
   url: https://www.newwavefoods.com/
+
+apis: []
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company's own front door answers a browser with an anti-bot challenge, so nothing behind it is reachable by any reader
+  evidence:
+  - url: https://www.newwavefoods.com/mcp
+    status: 403
+  - url: https://www.newwavefoods.com/
+    status: 403
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

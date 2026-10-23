@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/new-wave-foods/integrations
+- https://n8n.io/integrations/new-wave-foods/
+- https://composio.dev/toolkits/new-wave-foods
+- https://monid.ai/tools/new-wave-foods
+checked:
+- https://composio.dev/toolkits/new-wave-foods
+- https://monid.ai/tools/new-wave-foods
+- https://n8n.io/integrations/new-wave-foods/
+- https://zapier.com/apps/new-wave-foods/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

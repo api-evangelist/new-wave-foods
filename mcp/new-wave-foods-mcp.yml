@@ -1,0 +1,9 @@
+generated: '2026-10-22'
+method: derived
+source: surfaces module
+id: new-wave-foods
+type: MCPServer
+deployment:
+  mode: none
+  auth: none
+  verified: derived
